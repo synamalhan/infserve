@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-labelledby="t"><title id="t">infserve architecture</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 1L10 5L0 9z" fill="#1f2937"/></marker></defs>
+<rect width="1200" height="900" fill="#fbfaf7"/>
+<text x="70" y="125" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="48" font-weight="700" fill="#1f2937">infserve</text>
+<text x="70" y="172" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="24" fill="#57534e">Dynamic-batching inference server and its benchmarks</text>
+<rect x="70" y="198" width="64" height="4" fill="#115e59"/>
+<rect x="70" y="310" width="175" height="220" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.25"/>
+<text x="158" y="374" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#1f2937">Client</text>
+<text x="158" y="404" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#57534e">open-loop load</text>
+<text x="158" y="427" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#57534e">generator</text>
+<rect x="291" y="310" width="175" height="220" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.25"/>
+<text x="379" y="374" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#1f2937">API</text>
+<text x="379" y="404" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#57534e">FastAPI,</text>
+<text x="379" y="427" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#57534e">POST /predict</text>
+<rect x="512" y="310" width="175" height="220" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.25"/>
+<text x="600" y="374" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#1f2937">Queue</text>
+<text x="600" y="404" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#57534e">bounded, replies</text>
+<text x="600" y="427" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#57534e">429 when full</text>
+<rect x="734" y="310" width="175" height="220" rx="6" fill="#e7eeee" stroke="#115e59" stroke-width="2.5"/>
+<text x="821" y="374" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#1f2937">Batcher</text>
+<text x="821" y="404" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#57534e">flush on size or</text>
+<text x="821" y="427" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#57534e">max wait</text>
+<rect x="955" y="310" width="175" height="220" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.25"/>
+<text x="1042" y="374" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#1f2937">Worker</text>
+<text x="1042" y="404" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#57534e">ONNX Runtime,</text>
+<text x="1042" y="427" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" fill="#57534e">fp32 or int8</text>
+<path d="M245 420 H289" fill="none" stroke="#1f2937" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M466 420 H510" fill="none" stroke="#1f2937" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M688 420 H732" fill="none" stroke="#1f2937" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M909 420 H953" fill="none" stroke="#1f2937" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M1042 308 V266 H158 V306" fill="none" stroke="#a8a29e" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#a)"/>
+<text x="600" y="254" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="16" fill="#57534e">responses return to each caller</text>
+<rect x="70" y="600" width="1060" height="92" rx="6" fill="#f3f1ec" stroke="#a8a29e" stroke-width="1.25" stroke-dasharray="6 5"/>
+<rect x="70" y="600" width="5" height="92" fill="#115e59"/>
+<text x="100" y="636" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="19" font-weight="700" fill="#1f2937">Metrics and benchmarks (planned)</text>
+<text x="100" y="667" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="16.5" fill="#57534e">p50/p95/p99 latency, queue depth, batch sizes, throughput. Batching off vs on, fp32 vs int8.</text>
+<text x="70" y="860" font-family="system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="18" fill="#78716c">github.com/synamalhan/infserve</text></svg>
